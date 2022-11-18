@@ -14,6 +14,13 @@ Person.prototype.getFullName = function() {
     return `${this.firstName} ${this.lastName}`
   } 
 
+class Person {
+    constructor(firstName, lastName, dob){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+}
 
 // Instantiate an object from the class
 const person1 = new Person('John', 'Doe', '7-8-80');
